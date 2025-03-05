@@ -1,6 +1,7 @@
 import {JSX} from "react";
+import { Logo } from "../../components/Logo/logo";
 
-function NotFound(): JSX.Element {
+function NotFoundPage(): JSX.Element {
     return(
         <div className="page page--gray page--404">
             <header className="header">
@@ -8,7 +9,7 @@ function NotFound(): JSX.Element {
                     <div className="header__wrapper">
                         <div className="header__left">
                             <a className="header__logo-link" href="index.html">
-                                <img className="header__logo" src="img/logo.svg" alt="Rent service logo" width="81" height="41"/>
+                                <Logo/>
                             </a>
                         </div>
                     </div>
@@ -28,4 +29,4 @@ function NotFound(): JSX.Element {
     );
 }
 
-export default NotFound;
+export default NotFoundPage;

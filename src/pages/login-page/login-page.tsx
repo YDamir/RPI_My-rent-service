@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import { Logo } from "../../components/Logo/logo";
 
 function LoginPage(): JSX.Element {
     return(
@@ -8,7 +9,7 @@ function LoginPage(): JSX.Element {
                 <div className="header__wrapper">
                     <div className="header__left">
                     <a className="header__logo-link" href="main.html">
-                        <img className="header__logo" src="img/logo.svg" alt="Rent service logo" width="81" height="41"/>
+                        <Logo/>
                     </a>
                     </div>
                 </div>
