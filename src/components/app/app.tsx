@@ -1,6 +1,6 @@
 import { JSX } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { Setting, AppRoute, AuthorizationStatus } from "../../const";
+import { AppRoute, AuthorizationStatus } from "../../const";
 import MainPage from "../../pages/main-page/main-page";
 import FavoritesPage from "../../pages/favorites-page/favorites-page";
 import LoginPage from "../../pages/login-page/login-page";
@@ -8,7 +8,6 @@ import OfferPage from "../../pages/offer-page/offer-page";
 import NotFoundPage from "../../pages/not-found-page/not-found-page";
 import { PrivateRoute } from "../private-route/private-route";
 import { FullOffer, OffersList } from "../../types/offer";
-import { offersList } from "../../mocks/offers-list";
 
 type AppMainPageProps = {
     rentalOffersCount: number;
@@ -25,7 +24,7 @@ function App({ rentalOffersCount, offers, offersList }: AppMainPageProps): JSX.E
                 />
                 <Route path={AppRoute.Favorites} 
                     element={
-                        <PrivateRoute authorizationStatus={AuthorizationStatus.NoAuth}> 
+                        <PrivateRoute authorizationStatus={AuthorizationStatus.Auth}> 
                             <FavoritesPage /> 
                         </PrivateRoute>
                     } 

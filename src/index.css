@@ -1,3 +1,4 @@
+/* Общие стили */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,4 +66,81 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Стиль для кнопки при недостаточной валидности */
+.reviews__submit.form__submit.button.disabled {
+  background-color: #cccccc; /* Серый цвет */
+  cursor: not-allowed; /* Изменяем курсор */
+}
+
+/* Стиль для кнопки при валидной форме */
+.reviews__submit.form__submit.button.active {
+  background-color: #646cff; /* Цвет при активации */
+  color: white; /* Белый текст */
+  cursor: pointer; /* Изменяем курсор */
+}
+
+/* Ховер эффект для активной кнопки */
+.reviews__submit.form__submit.button.active:hover {
+  background-color: #535bf2; /* Темнее при наведении */
+}
+
+/* Стиль для звезд */
+.reviews__rating-form {
+  display: flex;
+  gap: 8px; /* Расстояние между звездами */
+}
+
+/* Общий стиль для изображений звезд */
+.form__star-image {
+  width: 37px;
+  height: 33px;
+  transition: opacity 0.3s ease-in-out; /* Плавный переход */
+  opacity: 0.6; /* Начальная прозрачность */
+}
+
+/* Активные звезды */
+.form__star-image[src*="star-active"] {
+  opacity: 1; /* Полная видимость */
+}
+
+/* Hover эффект для звезд */
+.reviews__rating-label:hover .form__star-image,
+.reviews__rating-label:hover ~ .reviews__rating-label .form__star-image {
+  opacity: 1; /* Показать все звезды до текущей */
+}
+
+/* Контейнер для звезд */
+.stars-container {
+  position: relative;
+  display: inline-block;
+  width: 185px; /* Ширина контейнера (5 звезд по 37px) */
+  height: 33px;
+}
+
+/* Серые звезды (фон) */
+.stars-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Активные звезды (наложение) */
+.stars-active-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+  height: 33px;
+}
+
+.stars-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out; /* Плавный переход */
 }

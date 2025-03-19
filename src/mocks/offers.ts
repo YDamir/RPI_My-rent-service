@@ -8,12 +8,12 @@ const offers: FullOffer[] = [
         'type': 'apartment',
         'price': 370,
         'images': [
-            '20.jpg',
-            '17.jpg',
-            '16.jpg',
-            '15.jpg',
-            '2.jpg',
-            '7.jpg',
+            '/img/20.jpg',
+            '/img/17.jpg',
+            '/img/16.jpg',
+            '/img/15.jpg',
+            '/img/2.jpg',
+            '/img/7.jpg',
         ],
         'city': {
             'name': 'Paris',
@@ -46,14 +46,167 @@ const offers: FullOffer[] = [
         'host': {
             'isPro': true,
             'name': 'Angelina',
-            'avatarUrl': 'avatar-angelina.jpg'
+            'avatarUrl': '/img/avatar-angelina.jpg'
         },
-        'isPremium': false,
+        'isPremium': true,
         'isFavorite': true,
         'rating': 4.9,
         'bedrooms': 2,
         'maxAdults': 3
     },
-]
+    {
+        'id': '2',
+        'title': 'Cozy Cottage in the Countryside',
+        'description': 'A charming cottage surrounded by nature. Perfect for a peaceful getaway.',
+        'type': 'house',
+        'price': 520,
+        'images': [
+            '/img/20.jpg',
+            '/img/17.jpg',
+            '/img/16.jpg',
+            '/img/15.jpg',
+            '/img/2.jpg',
+            '/img/7.jpg',
+        ],
+        'city': {
+            'name': 'Cologne',
+            'location': {
+                'latitude': 50.937531,
+                'longitude': 6.960279,
+                'zoom': 13
+            }
+        },
+        'location': {
+            'latitude': 50.937531,
+            'longitude': 6.960279,
+            'zoom': 16
+        },
+        'goods': [
+            'Heating',
+            'Wi-Fi',
+            'Fireplace',
+            'Laptop friendly workspace',
+            'Garden',
+            'Washer',
+            'Towels',
+            'Kitchen',
+            'Washing machine',
+            'Coffee machine',
+            'Parking'
+        ],
+        'host': {
+            'isPro': false,
+            'name': 'John',
+            'avatarUrl': '/img/avatar-john.jpg'
+        },
+        'isPremium': false,
+        'isFavorite': true,
+        'rating': 4.7,
+        'bedrooms': 3,
+        'maxAdults': 5
+    },
+    {
+        'id': '3',
+        'title': 'Modern Loft with City View',
+        'description': 'A stylish loft located in the heart of the city. Ideal for urban explorers.',
+        'type': 'loft',
+        'price': 450,
+        'images': [
+            '/img/20.jpg',
+            '/img/17.jpg',
+            '/img/16.jpg',
+            '/img/15.jpg',
+            '/img/2.jpg',
+            '/img/7.jpg',
+        ],
+        'city': {
+            'name': 'Brussels',
+            'location': {
+                'latitude': 50.85034,
+                'longitude': 4.35171,
+                'zoom': 13
+            }
+        },
+        'location': {
+            'latitude': 50.85034,
+            'longitude': 4.35171,
+            'zoom': 16
+        },
+        'goods': [
+            'Heating',
+            'Wi-Fi',
+            'Laptop friendly workspace',
+            'Air conditioning',
+            'Washer',
+            'Towels',
+            'Kitchen',
+            'Washing machine',
+            'Coffee machine',
+            'Balcony'
+        ],
+        'host': {
+            'isPro': true,
+            'name': 'Sophia',
+            'avatarUrl': '/img/avatar-sophia.jpg'
+        },
+        'isPremium': false,
+        'isFavorite': true,
+        'rating': 4.8,
+        'bedrooms': 1,
+        'maxAdults': 2
+    },
+    {
+        'id': '4',
+        'title': 'Luxury Penthouse with Pool',
+        'description': 'An exclusive penthouse offering stunning views and a private pool.',
+        'type': 'penthouse',
+        'price': 800,
+        'images': [
+            '/img/20.jpg',
+            '/img/17.jpg',
+            '/img/16.jpg',
+            '/img/15.jpg',
+            '/img/2.jpg',
+            '/img/7.jpg',
+        ],
+        'city': {
+            'name': 'Amsterdam',
+            'location': {
+                'latitude': 52.370216,
+                'longitude': 4.895168,
+                'zoom': 13
+            }
+        },
+        'location': {
+            'latitude': 52.370216,
+            'longitude': 4.895168,
+            'zoom': 16
+        },
+        'goods': [
+            'Heating',
+            'Wi-Fi',
+            'Laptop friendly workspace',
+            'Air conditioning',
+            'Private pool',
+            'Washer',
+            'Towels',
+            'Kitchen',
+            'Washing machine',
+            'Coffee machine',
+            'Jacuzzi',
+            'Terrace'
+        ],
+        'host': {
+            'isPro': true,
+            'name': 'Michael',
+            'avatarUrl': '/img/avatar-michael.jpg'
+        },
+        'isPremium': false,
+        'isFavorite': true,
+        'rating': 5.0,
+        'bedrooms': 4,
+        'maxAdults': 6
+    }
+];
 
-export {offers};
+export { offers };
