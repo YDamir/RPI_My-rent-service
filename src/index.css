@@ -1,0 +1,18 @@
+@import "leaflet/dist/leaflet.css";
+
+.cities__places-container {
+  display: flex;
+  gap: 20px;
+}
+
+.cities__right-section {
+  flex: 1;
+  min-width: 400px;
+}
+
+.cities__map {
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
